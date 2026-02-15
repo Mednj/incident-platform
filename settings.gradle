@@ -1,0 +1,4 @@
+rootProject.name = 'incident-platform'
+
+include("log-generator")
+include("ingestion-service")
