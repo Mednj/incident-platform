@@ -1,23 +1,31 @@
-package com.incident.platform.loggenerator.model;
+package com.incident.platform.ingestionservice.Entity;
+
+import jakarta.persistence.*;
 
 /**
  * @author mednj
  **/
-public class LogEvent {
+
+@Entity
+@Table(name = "logs")
+public class LogEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String service;
     private String level;
     private String message;
     private long timestamp;
 
+    // getters & setters
 
-    public LogEvent() {}
+    public Long getId() {
+        return id;
+    }
 
-    public LogEvent(String service, String level, String message, long timestamp) {
-        this.service = service;
-        this.level = level;
-        this.message = message;
-        this.timestamp = timestamp;
+    private void setId(Long id) {
+        this.id = id;
     }
 
     public String getService() {

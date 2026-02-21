@@ -10,7 +10,6 @@ public class LogGeneratorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LogGeneratorApplication.class, args);
-		System.out.println("Hello project");
 	}
 
 }

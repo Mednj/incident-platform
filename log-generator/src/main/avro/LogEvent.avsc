@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "LogEvent",
+  "namespace": "com.incident.platform.avro",
+  "fields": [
+    {"name": "service", "type": "string"},
+    {"name": "level", "type": "string"},
+    {"name": "message", "type": "string"},
+    {"name": "timestamp", "type": "long"}
+  ]
+}

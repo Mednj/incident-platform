@@ -4,7 +4,7 @@ package com.incident.platform.loggenerator.producer;
  * @author mednj
  **/
 
-import com.incident.platform.loggenerator.model.LogEvent;
+import com.incident.platform.avro.LogEvent;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
